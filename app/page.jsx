@@ -1,3 +1,7 @@
+'use client'
+
+import { signIn } from "next-auth/react"
+
 import { 
   Box, 
   Flex, 
@@ -93,7 +97,7 @@ export default function Home() {
             <Button marginTop="15px" bgColor="transparent" color="gray.200" _hover={{
               bgColor: "#eee",
               color: "#000"
-            }}>
+            }} onClick={() => signIn('google')}>
               <Image src="google-logo.png" width="35px" height="35px"/>
               Signup with Google
             </Button>
