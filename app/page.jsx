@@ -10,7 +10,8 @@ import {
   Input,
   Button,
   Image,
-  background
+  background,
+  Textarea
 } from "@chakra-ui/react";
 
 export default function Home() {
@@ -42,42 +43,54 @@ export default function Home() {
             gap=".5rem"
             marginTop="20px"
           >
-            <FormControl isRequired>
-              <FormLabel 
-                fontWeight="300"
-                fontSize=".9rem"
-              >First name</FormLabel>
-              <Input border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='text' />
-            </FormControl>
-            <FormControl isRequired>
-              <FormLabel 
-                fontWeight="300"
-                fontSize=".9rem"
-              >Last name</FormLabel>
-              <Input border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='text' />
-            </FormControl>
+            <Flex gap=".5rem">
+              <FormControl isRequired>
+                <FormLabel 
+                  fontWeight="300"
+                  fontSize=".9rem"
+                >First name</FormLabel>
+                <Input placeholder="Your First name" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='text' />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel 
+                  fontWeight="300"
+                  fontSize=".9rem"
+                >Last name</FormLabel>
+                <Input placeholder="Your last name" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='text' />
+              </FormControl>
+            </Flex>
             <FormControl isRequired>
               <FormLabel 
                 fontWeight="300"
                 fontSize=".9rem"
               >Email address</FormLabel>
-              <Input border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='email' />
+              <Input placeholder="your email" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='email' />
             </FormControl>
-            <FormControl isRequired>
+            <Flex gap=".5rem">
+              <FormControl isRequired>
+                <FormLabel 
+                  fontWeight="300"
+                  fontSize=".9rem"
+                >Address</FormLabel>
+                <Input placeholder="Your address" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='text' />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel 
+                  fontWeight="300"
+                  fontSize=".9rem"
+                >Phone</FormLabel>
+                <Input placeholder="Your phone" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='tel' />
+              </FormControl>
+            </Flex>
+            <FormControl>
               <FormLabel 
                 fontWeight="300"
-                fontSize=".9rem"
-              >Address</FormLabel>
-              <Input border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='text' />
+                fontSize=".9rem">Your descript message</FormLabel>
+              <Textarea placeholder="Your descript message" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" rows={3} resize="none"/>
             </FormControl>
-            <FormControl isRequired>
-              <FormLabel 
-                fontWeight="300"
-                fontSize=".9rem"
-              >Phone</FormLabel>
-              <Input border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" type='tel' />
-            </FormControl>
-            <Button marginTop="15px" bgColor="pink.500" color="gray.200">
+            <Button marginTop="15px" bgColor="pink.500" color="gray.200" _hover={{
+              bgColor: "pink.400"
+            }}>
               Register
             </Button>
             <Button marginTop="15px" bgColor="transparent" color="gray.200" _hover={{
@@ -85,7 +98,7 @@ export default function Home() {
               color: "#000"
             }}>
               <Image src="google-logo.png" width="35px" height="35px"/>
-              Enter with Google
+              Signup with Google
             </Button>
           </Flex>
         </form>
