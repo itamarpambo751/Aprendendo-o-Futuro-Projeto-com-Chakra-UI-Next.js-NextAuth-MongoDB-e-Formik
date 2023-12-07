@@ -16,6 +16,11 @@ import {
 } from "@chakra-ui/react";
 
 export default function Home() {
+
+  function SigninWithGoogle() {
+    signIn('google')
+  }
+
   return (
    <Flex
     minHeight="100vh"
@@ -23,6 +28,7 @@ export default function Home() {
     align="center"
     justifyContent="center"
     background="gray.900"
+    bgGradient="linear(to right, #430843 0%, #EA2171 50%, #571157 100%)"
     color="gray.200"
    >
     <Box
@@ -89,7 +95,8 @@ export default function Home() {
                 fontSize=".9rem">Your descript message</FormLabel>
               <Textarea placeholder="Your descript message" border="none" outline="none" bgColor="gray.900" focusBorderColor="gray.600" color="gray.200" rows={3} resize="none"/>
             </FormControl>
-            <Button marginTop="15px" bgColor="pink.500" color="gray.200" _hover={{
+            <Button marginTop="15px" bgGradient="linear(to right, #D31671 0%, #F65B99 50%, #D31671 100%)"
+            color="gray.200" _hover={{
               bgColor: "pink.400"
             }}>
               Register
@@ -97,7 +104,7 @@ export default function Home() {
             <Button marginTop="15px" bgColor="transparent" color="gray.200" _hover={{
               bgColor: "#eee",
               color: "#000"
-            }} onClick={() => signIn('google')}>
+            }} onClick={SigninWithGoogle}>
               <Image src="google-logo.png" width="35px" height="35px"/>
               Signup with Google
             </Button>

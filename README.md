@@ -24,6 +24,11 @@
 - Instale as dependências: `npm install` ou `yarn install`
 - Explore, aprenda e divirta-se! ✨
 
+## Em casos de erro:
+Acessa as issues relacionadas a este repositório, serão deixadas em aberto por questão de dúvidas:
+- [Timeout3500ms](https://github.com/itamarpambo751/Aprendendo-o-Futuro-Projeto-com-Chakra-UI-Next.js-NextAuth-MongoDB-e-Formik/issues/1)
+- [3xErrosAparecendoNoNavegador](https://github.com/itamarpambo751/Aprendendo-o-Futuro-Projeto-com-Chakra-UI-Next.js-NextAuth-MongoDB-e-Formik/issues/1)
+
 ## Seja Parte do Futuro!
 
 Este projeto é mais do que código. É uma oportunidade para moldar o futuro do desenvolvimento web. Vamos aprender, crescer e prosperar juntos!
