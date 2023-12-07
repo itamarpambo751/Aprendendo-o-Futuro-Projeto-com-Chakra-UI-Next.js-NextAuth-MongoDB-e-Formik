@@ -1,6 +1,6 @@
 'use client'
 
-import { signIn } from "next-auth/react"
+import { signIn, useSession } from "next-auth/react"
 
 import { 
   Box, 
@@ -14,11 +14,18 @@ import {
   Image,
   Textarea
 } from "@chakra-ui/react";
+import Authenticated from "@/components/authenticated";
 
 export default function Home() {
 
+  const { status } = useSession()
+
   function SigninWithGoogle() {
     signIn('google')
+  }
+
+  if (status === 'authenticated') {
+    return <Authenticated />
   }
 
   return (
