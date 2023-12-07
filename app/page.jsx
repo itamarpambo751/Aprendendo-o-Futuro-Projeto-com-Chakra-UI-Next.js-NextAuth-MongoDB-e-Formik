@@ -5,12 +5,9 @@ import {
   Text,
   FormControl,
   FormLabel,
-  FormErrorMessage,
-  FormHelperText, 
   Input,
   Button,
   Image,
-  background,
   Textarea
 } from "@chakra-ui/react";
 
