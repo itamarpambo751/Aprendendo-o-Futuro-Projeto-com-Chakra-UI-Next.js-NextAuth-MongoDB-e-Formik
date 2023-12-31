@@ -14,13 +14,13 @@
 
 ## Como Contribuir
 
-1. Clone este repositório: `git clone https://github.com/seu-usuario/seu-repositorio.git`
+1. Clone este repositório: `git clone https://github.com/itamarpambo751/Aprendendo-o-Futuro-Projeto-com-Chakra-UI-Next.js-NextAuth-MongoDB-e-Formik.git`
 2. Instale as dependências: `npm install` ou `yarn install`
 3. Explore, aprenda e divirta-se! ✨
 
 ## Comece Agora
 
-- Clone este repositório: `git clone https://github.com/seu-usuario/seu-repositorio.git`
+- Clone este repositório: `git clone https://github.com/itamarpambo751/Aprendendo-o-Futuro-Projeto-com-Chakra-UI-Next.js-NextAuth-MongoDB-e-Formik.git`
 - Instale as dependências: `npm install` ou `yarn install`
 - Explore, aprenda e divirta-se! ✨
 
